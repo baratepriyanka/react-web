@@ -1,0 +1,121 @@
+// import logo from './logo.svg';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+// import {Navbar, Nav, NavDropdown, Container,Offcanvas,Form,FormControl,Button} from 'react-bootstrap';
+// import React, {, Dropdown, NavItem, NavLink useState } from "react";
+import './App.css';
+
+const Navbar11 = () => {
+
+   
+        // const [style, setStyle] = useState("cont");
+        
+        // const changeStyle = () => {
+        //   console.log("you just clicked");
+        
+        //   setStyle("cont2");
+        // };
+        // const changeStyle111 = () => {
+        //     console.log("you just clicked");
+          
+        //     setStyle("cont");
+        //   };
+
+   return (
+            <>
+           <div className="container-fluid nav_bg ">
+                <div className="row">
+                    
+
+
+                        <nav className="navbar navbar-expand-lg navbar-light">
+                            <div className="container-fluid">
+                           
+                                <NavLink activeClassName='' className="navbar-brand" to="/">Navbar</NavLink>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
+                                </button>
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                                        <li className="nav-item">
+                                            <NavLink  exact activeClassName='menu_active' className="nav-link active" aria-current="page" to="/" >Home</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink activeClassName='menu_active' className="nav-link" to="service">Service</NavLink>
+                                        </li>
+                                        
+                                        <li className="nav-item">
+                                            <NavLink activeClassName='menu_active' className="nav-link" to="contact">Contact</NavLink>
+                                        </li>
+
+                                        <li className="nav-item">
+                                            <NavLink activeClassName='menu_active' className="nav-link" to="about">About</NavLink>
+                                        </li>
+                                        
+                                        <li className="nav-item">
+                                            <NavLink activeClassName='menu_active' className="nav-link" to="ContactDemo">ContactDemo</NavLink>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                           
+                        </nav>
+                    </div>
+
+                </div>
+
+               
+  {/* {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
+    <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+      <Container fluid>
+        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <Navbar.Offcanvas
+          id={`offcanvasNavbar-expand-${expand}`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+              Offcanvas
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="#action2">Link</Nav.Link>
+              <NavDropdown
+                title="Dropdown"
+                id={`offcanvasNavbarDropdown-expand-${expand}`}
+              >
+                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Form className="d-flex">
+              <FormControl
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
+  ))} */}
+
+            
+        </>
+    ); }
+
+export default Navbar11;
